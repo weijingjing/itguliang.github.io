@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>解决问题集锦-Ionic | IT姑凉</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="？Ionic 调用键盘搜索html: &amp;lt;form action=&quot;#&quot;&amp;gt;  &amp;lt;input type=&quot;search&quot; placeholder=&quot;输入关键字&quot; 	   ng-model=&quot;search.key&quot; ng-focus=&quot;searchInput()&quot; 	   ng-enter=&quot;doSearch(search.key)&quot;&amp;gt;&amp;lt;/form&amp;gt; directiv">
+<meta name="keywords" content="Ionic,Q&amp;A">
+<meta property="og:type" content="article">
+<meta property="og:title" content="解决问题集锦-Ionic">
+<meta property="og:url" content="https://itguliang.github.io/post/e44b2a33.html">
+<meta property="og:site_name" content="IT姑凉">
+<meta property="og:description" content="？Ionic 调用键盘搜索html: &amp;lt;form action=&quot;#&quot;&amp;gt;  &amp;lt;input type=&quot;search&quot; placeholder=&quot;输入关键字&quot; 	   ng-model=&quot;search.key&quot; ng-focus=&quot;searchInput()&quot; 	   ng-enter=&quot;doSearch(search.key)&quot;&amp;gt;&amp;lt;/form&amp;gt; directiv">
+<meta property="og:locale" content="zh-cn">
+<meta property="og:image" content="https://itguliang.github.io/post/!--￼12--%3E/public/img/pic/5.png">
+<meta property="og:updated_time" content="2018-05-10T05:03:32.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="解决问题集锦-Ionic">
+<meta name="twitter:description" content="？Ionic 调用键盘搜索html: &amp;lt;form action=&quot;#&quot;&amp;gt;  &amp;lt;input type=&quot;search&quot; placeholder=&quot;输入关键字&quot; 	   ng-model=&quot;search.key&quot; ng-focus=&quot;searchInput()&quot; 	   ng-enter=&quot;doSearch(search.key)&quot;&amp;gt;&amp;lt;/form&amp;gt; directiv">
+<meta name="twitter:image" content="https://itguliang.github.io/post/!--￼12--%3E/public/img/pic/5.png">
+  
+  
+    <link rel="icon" href="images/favicon.ico">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <header id="header">
+  <div id="header-bar">
+    <a href="/" id="logo">
+    	<img src="/images/logo.png" alt="IT姑凉">
+    	<span>IT姑凉</span>
+    </a>
+    <a id="main-nav-toggle" class="nav-icon"></a>
+  </div>
+</header>
+    <div id="container">
+        <div class="articles">
+  <article id="post-question-ionic" class="article article-type-post" itemscope itemprop="blogPost">
+    
+    <div class="article-inner">
+      
+      
+        <header>
+          
+  
+    <h1 class="article-title" itemprop="name">
+      解决问题集锦-Ionic
+    </h1>
+  
+
+          <div class="article-meta">
+          <a class="article-date">
+  <time datetime="2018-05-03T03:11:14.000Z" itemprop="datePublished">2018-05-03</time>
+</a>
+          
+            <div>
+              <a class="article-category-link" href="/categories/IT/">IT</a>►<a class="article-category-link" href="/categories/IT/Ionic/">Ionic</a>
+            </div>
+          
+        </div>
+        </header>
+      
+      <div class="article-entry" itemprop="articleBody">
+        
+          <h3 id="？Ionic-调用键盘搜索"><a href="#？Ionic-调用键盘搜索" class="headerlink" title="？Ionic 调用键盘搜索"></a>？Ionic 调用键盘搜索</h3><p>html:</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span> <span class="attr">action</span>=<span class="string">"#"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"search"</span> <span class="attr">placeholder</span>=<span class="string">"输入关键字"</span> </span></span><br><span class="line"><span class="tag">	   <span class="attr">ng-model</span>=<span class="string">"search.key"</span> <span class="attr">ng-focus</span>=<span class="string">"searchInput()"</span> </span></span><br><span class="line"><span class="tag">	   <span class="attr">ng-enter</span>=<span class="string">"doSearch(search.key)"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>directive:</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">.directive(<span class="string">'ngEnter'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="function"><span class="keyword">function</span>(<span class="params">scope, element, attrs</span>) </span>&#123;</span><br><span class="line">    element.bind(<span class="string">"keydown keypress"</span>, <span class="function"><span class="keyword">function</span>(<span class="params">event</span>) </span>&#123;</span><br><span class="line">      <span class="keyword">if</span>(event.which === <span class="number">13</span>) &#123;</span><br><span class="line">        scope.$apply(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">          scope.$<span class="built_in">eval</span>(attrs.ngEnter);</span><br><span class="line">		&#125;);</span><br><span class="line">		event.preventDefault();</span><br><span class="line">	  &#125;</span><br><span class="line">	&#125;);</span><br><span class="line">  &#125;;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<h3 id="？angularjs中ui-sref传递参数"><a href="#？angularjs中ui-sref传递参数" class="headerlink" title="？angularjs中ui-sref传递参数"></a>？angularjs中ui-sref传递参数</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"col"</span> <span class="attr">ui-sref</span>=<span class="string">"app.home-search(&#123;flag:'course'&#125;)"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"col"</span> <span class="attr">ui-sref</span>=<span class="string">"app.home-search(&#123;type: 1, role: 2&#125;)"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="？angularjs中-http模块POST请求request-payload转form-data"><a href="#？angularjs中-http模块POST请求request-payload转form-data" class="headerlink" title="？angularjs中$http模块POST请求request payload转form data"></a>？angularjs中$http模块POST请求request payload转form data</h3><p>对接后台接口，用post不成功，后台人员截图过来又说他那边可以，对比过后发现angular post请求表单参数在Request payload<br>他的在Form data,搜了解决方法有两种</p>
+<p>解决1配置$httpProvider：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> myApp = angular.module(<span class="string">'app'</span>,[]);  </span><br><span class="line">myApp.config(<span class="function"><span class="keyword">function</span>(<span class="params">$httpProvider</span>)</span>&#123;  </span><br><span class="line"></span><br><span class="line">  $httpProvider.defaults.transformRequest = <span class="function"><span class="keyword">function</span>(<span class="params">obj</span>)</span>&#123;  </span><br><span class="line">    <span class="keyword">var</span> str = [];  </span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> p <span class="keyword">in</span> obj)&#123;</span><br><span class="line">      str.push(<span class="built_in">encodeURIComponent</span>(p) + <span class="string">"="</span> + <span class="built_in">encodeURIComponent</span>(obj[p]));  </span><br><span class="line">    &#125;  </span><br><span class="line">    <span class="keyword">return</span> str.join(<span class="string">"&amp;"</span>);  </span><br><span class="line">  &#125;  </span><br><span class="line"></span><br><span class="line">  $httpProvider.defaults.headers.post = &#123;</span><br><span class="line">    <span class="string">'Content-Type'</span>: <span class="string">'application/x-www-form-urlencoded'</span>  </span><br><span class="line">  &#125;  </span><br><span class="line"></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<p>解决2在post中配置：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> url = ApiService.getEndpoint() + <span class="string">"api/feedback/appSave.do"</span>;</span><br><span class="line"><span class="keyword">return</span> $http(&#123;</span><br><span class="line">  url: url,</span><br><span class="line">  method: <span class="string">'POST'</span>,</span><br><span class="line">  headers: &#123;</span><br><span class="line">    <span class="string">'Content-Type'</span>: <span class="string">'application/x-www-form-urlencoded; charset=UTF-8'</span></span><br><span class="line">  &#125;,</span><br><span class="line">  transformRequest: <span class="function"><span class="keyword">function</span>(<span class="params">obj</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> str = [];</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> p <span class="keyword">in</span> obj) &#123;</span><br><span class="line">      str.push(<span class="built_in">encodeURIComponent</span>(p) + <span class="string">"="</span> + <span class="built_in">encodeURIComponent</span>(obj[p]));</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> str.join(<span class="string">"&amp;"</span>);</span><br><span class="line">  &#125;,</span><br><span class="line">  data: data</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<p>ps:如果加载了jquery可以直接这样使用</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">transformRequest : <span class="function"><span class="keyword">function</span>(<span class="params">data</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">return</span> $.param(data);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="？ionic访问外网"><a href="#？ionic访问外网" class="headerlink" title="？ionic访问外网"></a>？ionic访问外网</h3><p>详情请移步<a href="http://itguliang.github.io/blog/2016/07/11/Ionic-InAppBrowser" title="我的实现">Ionic InAppBrowser app内访问外网</a></p>
+<p><img src="!--￼12--&gt;/public/img/pic/5.png" alt="我的实现" title="我的实现"></p>
+<h3 id="？滑动到屏幕顶端不是内容顶端"><a href="#？滑动到屏幕顶端不是内容顶端" class="headerlink" title="？滑动到屏幕顶端不是内容顶端"></a>？滑动到屏幕顶端不是内容顶端</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> scroll = <span class="built_in">document</span>.getElementById(id).offsetTop - $ionicScrollDelegate.getScrollPosition().top;</span><br><span class="line">$ionicScrollDelegate.resize();</span><br><span class="line">$ionicScrollDelegate.scrollBy(<span class="number">0</span>, scroll, <span class="literal">true</span>);</span><br></pre></td></tr></table></figure>
+<h3 id="？Ionic清除某一页面的cache"><a href="#？Ionic清除某一页面的cache" class="headerlink" title="？Ionic清除某一页面的cache"></a>？Ionic清除某一页面的cache</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">$ionicHistory.clearCache([<span class="string">"tab.aa"</span>,<span class="string">"tab.bb"</span>]).then(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  $state.go(<span class="string">'tab.home'</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<h3 id="？angular-video-ng-src-不起作用"><a href="#？angular-video-ng-src-不起作用" class="headerlink" title="？angular video ng-src 不起作用"></a>？angular video ng-src 不起作用</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">app.filter(<span class="string">'trusted'</span>, [<span class="string">'$sce'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">$sce</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="function"><span class="keyword">function</span>(<span class="params">url</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> $sce.trustAsResourceUrl(url);</span><br><span class="line">  &#125;;</span><br><span class="line">&#125;]);</span><br></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">video</span> <span class="attr">controls</span> <span class="attr">poster</span>=<span class="string">"img/poster.png"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">source</span> <span class="attr">ng-src</span>=<span class="string">"&#123;&#123;object.src | trusted&#125;&#125;"</span> <span class="attr">type</span>=<span class="string">"video/mp4"</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">video</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="？Ionic-angular切换语言-国际化问题"><a href="#？Ionic-angular切换语言-国际化问题" class="headerlink" title="？Ionic angular切换语言 国际化问题"></a>？Ionic angular切换语言 国际化问题</h3><p>移步至：<a href="http://itguliang.github.io/blog/2016/04/01/ionic-language/" title="国际化">Ionic angular国际化问题</a></p>
+<h3 id="？config-xml设置KeyboardDisplayRequiresUserAction为true，实现评论键盘自动弹出的功能-没试过"><a href="#？config-xml设置KeyboardDisplayRequiresUserAction为true，实现评论键盘自动弹出的功能-没试过" class="headerlink" title="？config.xml设置KeyboardDisplayRequiresUserAction为true，实现评论键盘自动弹出的功能(没试过)"></a>？config.xml设置KeyboardDisplayRequiresUserAction为true，实现评论键盘自动弹出的功能(没试过)</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">preference</span> <span class="attr">name</span>=<span class="string">"KeyboardDisplayRequiresUserAction"</span> <span class="attr">value</span>=<span class="string">"false"</span> /&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="？网络情况-cordovaNetwork"><a href="#？网络情况-cordovaNetwork" class="headerlink" title="？网络情况$cordovaNetwork"></a>？网络情况$cordovaNetwork</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">$rootScope.$on(<span class="string">'$ionicView.afterEnter'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">scopes, states</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">if</span> (<span class="built_in">window</span>.cordova) &#123;</span><br><span class="line">    <span class="keyword">var</span> type = $cordovaNetwork.getNetwork();</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (type == <span class="string">'2g'</span> || type == <span class="string">'none'</span>|| type == <span class="string">'unknown'</span>) &#123;</span><br><span class="line">      $cordovaToast.showLongCenter(<span class="string">'当前网络慢,请在网络顺畅情况下使用'</span>);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+        
+      </div>
+    </div>
+    
+      
+<nav id="article-nav">
+  
+    <a href="/post/ef906deb.html" id="article-nav-newer" class="article-nav-link-wrap">
+      <div class="article-nav-title">&laquo;
+        
+          Hello World3
+        
+      </div>
+    </a>
+  
+  
+    <a href="/post/1fd47712.html" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Hello World12&raquo;</div>
+    </a>
+  
+</nav>
+
+    
+  </article>
+
+  
+</div>
+
+
+
+
+    <aside id="sidebar"  >
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/Ionic/" style="font-size: 10px;">Ionic</a> <a href="/tags/Q-A/" style="font-size: 13.33px;">Q&A</a> <a href="/tags/React/" style="font-size: 10px;">React</a> <a href="/tags/Travel/" style="font-size: 16.67px;">Travel</a> <a href="/tags/tag1/" style="font-size: 16.67px;">tag1</a> <a href="/tags/tag2/" style="font-size: 20px;">tag2</a> <a href="/tags/tag3/" style="font-size: 13.33px;">tag3</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">分类</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/IT/">IT</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/IT/Ionic/">Ionic</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/IT/Other/">Other</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/IT/React/">React</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Life/">Life</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Life/Diary/">Diary</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Life/Travel/">Travel</a></li></ul></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">友链</h3>
+    <div class="widget">
+      <ul class="entry">
+        
+          <li class='link'><a target="_blank" href='https://fuzhaohao.github.io'>Michael&#39;s Blog</a></li>
+        
+          <li class='link'><a target="_blank" href='http://www.linovo.me'>Linovo&#39;s Blog</a></li>
+        
+          <li class='link'><a target="_blank" href='http://mumusanke.com'>Sherryriver&#39;s Blog</a></li>
+        
+          <li class='link'><a target="_blank" href='https://musclejack.github.io'>Mz&#39;s Blog</a></li>
+        
+          <li class='link'><a target="_blank" href='http://jintang.github.io'>堂&#39;s Blog</a></li>
+        
+          <li class='link'><a target="_blank" href='http://www.lovemoqing.com'>默卿&#39;s Blog</a></li>
+        
+          <li class='link'><a target="_blank" href='http://www.wangjie.pro'>WangJie&#39;s Blog</a></li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+
+    </div>
+    <footer id="footer">
+  
+  <div id="footer-info" class="inner">
+      &copy; 2018 IT姑凉
+  </div>
+</footer>
+</body>
+</html>
