@@ -839,6 +839,16 @@ a.article-title:hover {
   max-width: 100%;
   margin: 0 auto;
 }
+.article-footer-copyright {
+  border: 1px solid #ccc;
+  padding: 6px;
+  font-size: 12px;
+  color: #999;
+  font-style: italic;
+}
+.article-footer-copyright a {
+  color: rgba(0,138,190,0.812);
+}
 .toc-article {
   margin-top: 20px;
   display: inline;
@@ -856,7 +866,7 @@ a.article-title:hover {
   margin-top: 10px;
 }
 .toc-article .toc-number {
-  display: none;
+  display: true;
 }
 .toc-article .toc-child {
   margin-left: 10px;
@@ -1271,6 +1281,10 @@ pre .javascript .function {
 .widget ul ol,
 .widget ol ol {
   list-style: decimal;
+}
+.widget .link {
+  float: left;
+  margin-right: 15px;
 }
 .category-list-count,
 .tag-list-count,
