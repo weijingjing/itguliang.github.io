@@ -121,6 +121,24 @@ body {
   font: 14px -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-text-size-adjust: 100%;
 }
+.err {
+  text-align: center;
+}
+.err1 {
+  font-size: 120px;
+  color: #808080;
+  margin: 150px 0 50px 0;
+}
+.err2 {
+  color: #808080;
+}
+.err3 {
+  margin: 20px;
+}
+.err3 a {
+  text-decoration: none;
+  color: #00aced;
+}
 .outer {
   max-width: 1220px;
   margin: 0 auto;
