@@ -429,21 +429,16 @@ body {
   clear: both;
 }
 .article-date {
-  float: left;
   color: #999;
 }
 .article-category {
-  float: left;
   line-height: 1em;
   color: #ccc;
   text-shadow: 0 1px #fff;
-  margin-left: 8px;
-}
-.article-category:before {
-  content: "\2022";
+  margin: 0 8px;
 }
 .article-category-link {
-  margin: 0 12px 1em;
+  margin: 0 2px;
   color: #999;
   text-decoration: none;
 }
