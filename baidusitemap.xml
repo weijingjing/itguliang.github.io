@@ -4,6 +4,79 @@
 
     
   <url>
+    <loc>https://itguliang.github.io/post/1fd47712.html</loc>
+    <lastmod>2018-05-17T06:54:46.000Z</lastmod>
+    <data>
+        <display>
+        <title>前端学习资源整理</title>
+        <pubTime>2018-05-14T16:00:00.000Z</pubTime>
+        
+        <tag>React</tag>
+         
+        <tag>Redux</tag>
+         
+         
+           
+             
+              <breadCrumb title="IT" url="https://itguliang.github.io/categories/IT/"/>
+          
+             
+              <breadCrumb title="React" url="https://itguliang.github.io/categories/IT/React/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://itguliang.github.io/post/5254fc55.html</loc>
+    <lastmod>2018-05-17T02:08:00.000Z</lastmod>
+    <data>
+        <display>
+        <title>解决问题集锦</title>
+        <pubTime>2018-05-09T16:00:00.000Z</pubTime>
+        
+        <tag>Q&amp;A</tag>
+         
+         
+           
+             
+              <breadCrumb title="IT" url="https://itguliang.github.io/categories/IT/"/>
+          
+             
+              <breadCrumb title="Other" url="https://itguliang.github.io/categories/IT/Other/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://itguliang.github.io/post/e44b2a33.html</loc>
+    <lastmod>2018-05-17T02:07:12.000Z</lastmod>
+    <data>
+        <display>
+        <title>解决问题集锦-Ionic</title>
+        <pubTime>2018-05-09T16:00:00.000Z</pubTime>
+        
+        <tag>Ionic</tag>
+         
+        <tag>Q&amp;A</tag>
+         
+         
+           
+             
+              <breadCrumb title="IT" url="https://itguliang.github.io/categories/IT/"/>
+          
+             
+              <breadCrumb title="Ionic" url="https://itguliang.github.io/categories/IT/Ionic/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://itguliang.github.io/post/f1da163e.html</loc>
     <lastmod>2018-05-16T08:05:58.000Z</lastmod>
     <data>
@@ -56,29 +129,6 @@
         <display>
         <title>零基础学习React之React TabNavigation</title>
         <pubTime>2018-05-09T16:00:00.000Z</pubTime>
-        
-        <tag>React</tag>
-         
-         
-           
-             
-              <breadCrumb title="IT" url="https://itguliang.github.io/categories/IT/"/>
-          
-             
-              <breadCrumb title="React" url="https://itguliang.github.io/categories/IT/React/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://itguliang.github.io/post/1fd47712.html</loc>
-    <lastmod>2018-05-16T01:21:01.000Z</lastmod>
-    <data>
-        <display>
-        <title>React Native资源</title>
-        <pubTime>2018-05-14T16:00:00.000Z</pubTime>
         
         <tag>React</tag>
          
@@ -186,54 +236,6 @@
            
              
               <breadCrumb title="IT" url="https://itguliang.github.io/categories/IT/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://itguliang.github.io/post/e44b2a33.html</loc>
-    <lastmod>2018-05-15T02:58:38.000Z</lastmod>
-    <data>
-        <display>
-        <title>解决问题集锦-Ionic</title>
-        <pubTime>2018-05-09T16:00:00.000Z</pubTime>
-        
-        <tag>Q&amp;A</tag>
-         
-        <tag>Ionic</tag>
-         
-         
-           
-             
-              <breadCrumb title="IT" url="https://itguliang.github.io/categories/IT/"/>
-          
-             
-              <breadCrumb title="Ionic" url="https://itguliang.github.io/categories/IT/Ionic/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://itguliang.github.io/post/5254fc55.html</loc>
-    <lastmod>2018-05-15T02:58:28.000Z</lastmod>
-    <data>
-        <display>
-        <title>解决问题集锦</title>
-        <pubTime>2018-05-09T16:00:00.000Z</pubTime>
-        
-        <tag>Q&amp;A</tag>
-         
-         
-           
-             
-              <breadCrumb title="IT" url="https://itguliang.github.io/categories/IT/"/>
-          
-             
-              <breadCrumb title="Other" url="https://itguliang.github.io/categories/IT/Other/"/>
           
         </display>
     </data>
