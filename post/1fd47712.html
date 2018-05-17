@@ -15,7 +15,7 @@
 <meta property="og:site_name" content="IT姑凉">
 <meta property="og:description" content="React Native 第三方插件 通过URL Schema方式打开APP：react-native-deep-linking 通讯录操作：react-native-contacts 国际化：react-native-i18n 获取设备信息：react-native-device-info 消息推送：react-native-push-sdk ARMS SDK 版本更新、热部署 二维码扫描：re">
 <meta property="og:locale" content="zh-cn">
-<meta property="og:updated_time" content="2018-05-17T06:54:46.000Z">
+<meta property="og:updated_time" content="2018-05-17T09:28:53.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="前端学习资源整理">
 <meta name="twitter:description" content="React Native 第三方插件 通过URL Schema方式打开APP：react-native-deep-linking 通讯录操作：react-native-contacts 国际化：react-native-i18n 获取设备信息：react-native-device-info 消息推送：react-native-push-sdk ARMS SDK 版本更新、热部署 二维码扫描：re">
@@ -118,6 +118,7 @@
 <li><a href="http://www.cnblogs.com/opendigg/p/6513510.html" rel="external nofollow noopener noreferrer" target="_blank">http://www.cnblogs.com/opendigg/p/6513510.html</a></li>
 </ul>
 </li>
+<li>ionic图标旧版入口没有了，可以用这个查看 <a href="http://www.runoob.com/ionic/ionic-icon.html" rel="external nofollow noopener noreferrer" target="_blank">http://www.runoob.com/ionic/ionic-icon.html</a></li>
 </ul>
 <h2 id="电子书"><a href="#电子书" class="headerlink" title="电子书"></a>电子书</h2><ul>
 <li>《React全栈》</li>
@@ -134,6 +135,12 @@
       </div>
     </div>
     
+    <div class="dashang-div">
+       <a id="dashang" class="dashang" href="javascript:;" title="Donate 打赏"></a>
+       <div id="payme" class="hidden">
+         <img src="/images/pay.png">
+       </div>
+    </div>
     
       
 <nav id="article-nav">
@@ -201,6 +208,14 @@
   
 </aside>
 
+<script>
+(function() {
+    document.getElementById('dashang').onclick = function(){
+      var display=document.getElementById('payme').style.display;
+      document.getElementById('payme').style.display=display=="block"?"none":"block";
+    }
+  })();
+</script>
     </div>
     <footer id="footer">
   
