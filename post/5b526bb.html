@@ -15,7 +15,7 @@
 <meta property="og:site_name" content="IT姑凉">
 <meta property="og:description" content="基本命令备注下：hexo new “postName” #新建文章hexo new page “pageName” #新建页面hexo cleanhexo generate #生成静态页面至public目录hexo server #开启预览访问端口（默认端口4000，’ctrl + c’关闭server）hexo deploy #将.deploy目录部署到GitHub hexo n == hexo">
 <meta property="og:locale" content="zh-cn">
-<meta property="og:updated_time" content="2018-05-16T03:23:50.000Z">
+<meta property="og:updated_time" content="2018-05-17T08:28:12.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo搭建博客常见问题">
 <meta name="twitter:description" content="基本命令备注下：hexo new “postName” #新建文章hexo new page “pageName” #新建页面hexo cleanhexo generate #生成静态页面至public目录hexo server #开启预览访问端口（默认端口4000，’ctrl + c’关闭server）hexo deploy #将.deploy目录部署到GitHub hexo n == hexo">
@@ -38,7 +38,6 @@
     	<img src="/images/logo.png" alt="IT姑凉">
     	<span>IT姑凉</span>
     </a>
-    <a id="main-nav-toggle" class="nav-icon"></a>
   </div>
 </header>
     <div id="container">
@@ -103,7 +102,7 @@
 <figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">&lt;% <span class="keyword">if</span> (theme.links)&#123; %&gt;</span><br><span class="line">  &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"widget-wrap"</span>&gt;</span><br><span class="line">    &lt;h3 <span class="class"><span class="keyword">class</span></span>=<span class="string">"widget-title"</span>&gt;<span class="xml"><span class="tag">&lt;<span class="name">%=</span> <span class="attr">__</span>('友链') %&gt;</span><span class="tag">&lt;/<span class="name">h3</span>&gt;</span></span></span><br><span class="line">    &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"widget"</span>&gt;</span><br><span class="line">      &lt;ul <span class="class"><span class="keyword">class</span></span>=<span class="string">"entry"</span>&gt;</span><br><span class="line">        &lt;% <span class="keyword">for</span> (<span class="keyword">var</span> i <span class="keyword">in</span> theme.links)&#123; %&gt;</span><br><span class="line">          &lt;li <span class="class"><span class="keyword">class</span></span>=<span class="string">'link'</span>&gt;</span><br><span class="line">            &lt;a target=<span class="string">"_blank"</span> href=<span class="string">'&lt;%- theme.links[i] %&gt;'</span>&gt;<span class="xml"><span class="tag">&lt;<span class="name">%=</span> <span class="attr">i</span> %&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span></span><br><span class="line">          &lt;<span class="regexp">/li&gt;</span></span><br><span class="line"><span class="regexp">        &lt;% &#125; %&gt;</span></span><br><span class="line"><span class="regexp">      &lt;/u</span>l&gt;</span><br><span class="line">    &lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">  &lt;/</span>div&gt;</span><br><span class="line">&lt;% &#125; %&gt;</span><br></pre></td></tr></table></figure>
 <p>在对应的主题目录下的<code>_config.yml</code>文件中widgets下添加上links</p>
 <figure class="highlight xml"><table><tr><td class="code"><pre><span class="line">widgets:</span><br><span class="line">- links</span><br></pre></td></tr></table></figure>
-<h1 id="其他功能"><a href="#其他功能" class="headerlink" title="其他功能"></a>其他功能</h1><h2 id="统计"><a href="#统计" class="headerlink" title="统计"></a>统计</h2><p>网上查了一下，用不蒜子，不过暂时好像不开放注册，先备注下，后期加上<br><a href="http://busuanzi.ibruce.info/" rel="external nofollow noopener noreferrer" target="_blank">http://busuanzi.ibruce.info/</a></p>
+<h1 id="其他功能"><a href="#其他功能" class="headerlink" title="其他功能"></a>其他功能</h1><h2 id="统计"><a href="#统计" class="headerlink" title="统计"></a>统计</h2><p>网上查了一下，用不蒜子，不过暂时好像不开放注册，先备注下，后期加上<br><a href="http://busuanzi.ibruce.info/" rel="external nofollow noopener noreferrer" target="_blank">http://busuanzi.ibruce.info/</a><br>暂时先用leancloud</p>
 <h2 id="返回顶部（未完成）"><a href="#返回顶部（未完成）" class="headerlink" title="返回顶部（未完成）"></a>返回顶部（未完成）</h2><h2 id="打赏（未完成）"><a href="#打赏（未完成）" class="headerlink" title="打赏（未完成）"></a>打赏（未完成）</h2><p>参考：<br><a href="https://segmentfault.com/a/1190000006057336" rel="external nofollow noopener noreferrer" target="_blank">https://segmentfault.com/a/1190000006057336</a><br><a href="http://www.ituring.com.cn/article/199295" rel="external nofollow noopener noreferrer" target="_blank">http://www.ituring.com.cn/article/199295</a><br><a href="https://hexo.io/zh-cn/docs/helpers.html" rel="external nofollow noopener noreferrer" target="_blank">https://hexo.io/zh-cn/docs/helpers.html</a><br><a href="http://linbinghe.com/2017/982b12f0.html" rel="external nofollow noopener noreferrer" target="_blank">http://linbinghe.com/2017/982b12f0.html</a></p>
 
         
@@ -129,8 +128,8 @@
     </a>
   
   
-    <a href="/post/c3ec74bc.html" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">我的书单&raquo;</div>
+    <a href="/post/e44b2a33.html" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">解决问题集锦-Ionic&raquo;</div>
     </a>
   
 </nav>
