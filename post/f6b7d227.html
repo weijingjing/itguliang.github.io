@@ -5,20 +5,20 @@
   
 
   
-  <title>Hello World14 | IT姑凉</title>
+  <title>在React中使用Redux | IT姑凉</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.">
-<meta name="keywords" content="Travel">
+  <meta name="description" content="安装reduxnpm install --save redux react-redux redux-thunknpm install --save-dev redux-logger react-redux帮助你完成数据订阅redux-thunk可以放你实现异步actionredux-logger是redux的日志中间件 使用redux">
+<meta name="keywords" content="React,Redux">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World14">
+<meta property="og:title" content="在React中使用Redux">
 <meta property="og:url" content="https://itguliang.github.io/post/f6b7d227.html">
 <meta property="og:site_name" content="IT姑凉">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.">
+<meta property="og:description" content="安装reduxnpm install --save redux react-redux redux-thunknpm install --save-dev redux-logger react-redux帮助你完成数据订阅redux-thunk可以放你实现异步actionredux-logger是redux的日志中间件 使用redux">
 <meta property="og:locale" content="zh-cn">
-<meta property="og:updated_time" content="2018-05-15T03:00:07.000Z">
+<meta property="og:updated_time" content="2018-05-18T01:30:13.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World14">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.">
+<meta name="twitter:title" content="在React中使用Redux">
+<meta name="twitter:description" content="安装reduxnpm install --save redux react-redux redux-thunknpm install --save-dev redux-logger react-redux帮助你完成数据订阅redux-thunk可以放你实现异步actionredux-logger是redux的日志中间件 使用redux">
   <script type="text/javascript" src="/js/jquery.min.js"></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   
@@ -42,7 +42,7 @@
 </header>
     <div id="container">
         <div class="articles">
-  <article id="post-hello-world14" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <article id="post-react-native-redux" class="article article-type-post" itemscope="" itemprop="blogPost">
     
     <div class="article-inner">
       
@@ -51,7 +51,7 @@
           
   
     <h1 class="article-title" itemprop="name">
-      Hello World14
+      在React中使用Redux
     </h1>
   
 
@@ -69,7 +69,7 @@
           
             <span class="article-category-link">
                 <i class="far fa-eye"></i>
-                <span id="/post/f6b7d227.html" class="leancloud_visitors" data-flag-title="Hello World14"></span>
+                <span id="/post/f6b7d227.html" class="leancloud_visitors" data-flag-title="在React中使用Redux"></span>
             </span>
           
         </div>
@@ -78,16 +78,9 @@
       
       <div class="article-entry" itemprop="articleBody">
         
-          <p>Welcome to <a href="https://hexo.io/" rel="external nofollow noopener noreferrer" target="_blank">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" rel="external nofollow noopener noreferrer" target="_blank">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" rel="external nofollow noopener noreferrer" target="_blank">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" rel="external nofollow noopener noreferrer" target="_blank">GitHub</a>.<br><a id="more"></a></p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" rel="external nofollow noopener noreferrer" target="_blank">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" rel="external nofollow noopener noreferrer" target="_blank">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" rel="external nofollow noopener noreferrer" target="_blank">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" rel="external nofollow noopener noreferrer" target="_blank">Deployment</a></p>
-
+          <h3 id="安装redux"><a href="#安装redux" class="headerlink" title="安装redux"></a>安装redux</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install --save redux react-redux redux-thunk</span><br><span class="line">npm install --save-dev redux-logger</span><br></pre></td></tr></table></figure>
+<p>react-redux帮助你完成数据订阅<br>redux-thunk可以放你实现异步action<br>redux-logger是redux的日志中间件</p>
+<h3 id="使用redux"><a href="#使用redux" class="headerlink" title="使用redux"></a>使用redux</h3>
         
       </div>
     </div>
@@ -111,8 +104,8 @@
     </a>
   
   
-    <a href="/post/564a1981.html" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Hello World144&raquo;</div>
+    <a href="/post/4493d05e.html" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Hello World27&raquo;</div>
     </a>
   
 </nav>
@@ -132,7 +125,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">标签云</h3>
     <div class="widget tagcloud">
-      <a href="/tags/Book/" style="font-size: 10px;">Book</a> <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/Ionic/" style="font-size: 10px;">Ionic</a> <a href="/tags/Life/" style="font-size: 10px;">Life</a> <a href="/tags/Q-A/" style="font-size: 20px;">Q&A</a> <a href="/tags/React/" style="font-size: 20px;">React</a> <a href="/tags/Redux/" style="font-size: 10px;">Redux</a> <a href="/tags/Travel/" style="font-size: 20px;">Travel</a>
+      <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/Ionic/" style="font-size: 10px;">Ionic</a> <a href="/tags/Life/" style="font-size: 10px;">Life</a> <a href="/tags/Q-A/" style="font-size: 15px;">Q&A</a> <a href="/tags/React/" style="font-size: 20px;">React</a> <a href="/tags/Redux/" style="font-size: 20px;">Redux</a> <a href="/tags/Travel/" style="font-size: 10px;">Travel</a>
     </div>
   </div>
 
@@ -141,7 +134,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">分类</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/IT/">IT</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/IT/Ionic/">Ionic</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/IT/Other/">Other</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/IT/React/">React</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Life/">Life</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Life/Diary/">Diary</a></li></ul></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/IT/">IT</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/IT/Ionic/">Ionic</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/IT/Other/">Other</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/IT/React/">React</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/IT/Redux/">Redux</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Life/">Life</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Life/Diary/">Diary</a></li></ul></li></ul>
     </div>
   </div>
 

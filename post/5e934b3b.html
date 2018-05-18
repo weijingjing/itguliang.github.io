@@ -15,20 +15,19 @@
 <meta property="og:site_name" content="IT姑凉">
 <meta property="og:description" content="看了一点点文档，看到导航部分写个小 demo 想实现的效果 创建项目  react-native init ReacNativeDemo在初始结构下添加了src文件夹放置源码，目录结构如下  步骤安装组件安装导航组件React Navigation yarn add react-navigation 安装第三方图标组件react-native-vector-icons yarn add  reac">
 <meta property="og:locale" content="zh-cn">
-<meta property="og:image" content="https://pic3.zhimg.com/v2-a4ee17d16e3674c606aa136158248067_b.jpg">
-<meta property="og:image" content="https://pic2.zhimg.com/v2-89952cf1f9d6dcf3e8f0b666d52164c3_b.jpg">
-<meta property="og:image" content="https://images2018.cnblogs.com/blog/440112/201805/440112-20180507111129461-372521148.png">
-<meta property="og:image" content="https://pic4.zhimg.com/v2-97d85d611da93598dd0912b0239fd2c4_b.jpg">
-<meta property="og:image" content="https://images2018.cnblogs.com/blog/440112/201805/440112-20180510143757124-80660339.png">
-<meta property="og:image" content="https://pic3.zhimg.com/v2-85c2951d0a71ef6519561772e57c2904_b.jpg">
-<meta property="og:image" content="https://pic2.zhimg.com/v2-ca1063f482d003164e1ba79818a13b27_b.jpg">
-<meta property="og:image" content="https://images2018.cnblogs.com/blog/440112/201805/440112-20180510143609335-1550180614.png">
-<meta property="og:image" content="https://pic2.zhimg.com/v2-d4ef1bd7cc19edceb1b8094741cdcc04_b.jpg">
-<meta property="og:updated_time" content="2018-05-16T02:13:34.000Z">
+<meta property="og:image" content="http://p8x1ehkdn.bkt.clouddn.com/static/images/5e934b3b-1.png">
+<meta property="og:image" content="http://p8x1ehkdn.bkt.clouddn.com/static/images/5e934b3b-2.png">
+<meta property="og:image" content="http://p8x1ehkdn.bkt.clouddn.com/static/images/5e934b3b-3.png">
+<meta property="og:image" content="http://p8x1ehkdn.bkt.clouddn.com/static/images/5e934b3b-4.png">
+<meta property="og:image" content="http://p8x1ehkdn.bkt.clouddn.com/static/images/5e934b3b-5.png">
+<meta property="og:image" content="http://p8x1ehkdn.bkt.clouddn.com/static/images/5e934b3b-6.png">
+<meta property="og:image" content="http://p8x1ehkdn.bkt.clouddn.com/static/images/5e934b3b-7.png">
+<meta property="og:image" content="http://p8x1ehkdn.bkt.clouddn.com/static/images/5e934b3b-8.png">
+<meta property="og:updated_time" content="2018-05-18T09:28:14.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="零基础学习React之React TabNavigation">
 <meta name="twitter:description" content="看了一点点文档，看到导航部分写个小 demo 想实现的效果 创建项目  react-native init ReacNativeDemo在初始结构下添加了src文件夹放置源码，目录结构如下  步骤安装组件安装导航组件React Navigation yarn add react-navigation 安装第三方图标组件react-native-vector-icons yarn add  reac">
-<meta name="twitter:image" content="https://pic3.zhimg.com/v2-a4ee17d16e3674c606aa136158248067_b.jpg">
+<meta name="twitter:image" content="http://p8x1ehkdn.bkt.clouddn.com/static/images/5e934b3b-1.png">
   <script type="text/javascript" src="/js/jquery.min.js"></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   
@@ -89,9 +88,9 @@
       <div class="article-entry" itemprop="articleBody">
         
           <p>看了一点点文档，看到导航部分<br>写个小 demo</p>
-<h2 id="想实现的效果"><a href="#想实现的效果" class="headerlink" title="想实现的效果"></a>想实现的效果</h2><p><img src="https://pic3.zhimg.com/v2-a4ee17d16e3674c606aa136158248067_b.jpg" alt="图片" title="图片"></p>
+<h2 id="想实现的效果"><a href="#想实现的效果" class="headerlink" title="想实现的效果"></a>想实现的效果</h2><img src="http://p8x1ehkdn.bkt.clouddn.com/static/images/5e934b3b-1.png">
 <p>创建项目  react-native init ReacNativeDemo<br>在初始结构下添加了src文件夹放置源码，目录结构如下</p>
-<p><img src="https://pic2.zhimg.com/v2-89952cf1f9d6dcf3e8f0b666d52164c3_b.jpg" alt="图片" title="图片"></p>
+<img src="http://p8x1ehkdn.bkt.clouddn.com/static/images/5e934b3b-2.png">
 <h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><h3 id="安装组件"><a href="#安装组件" class="headerlink" title="安装组件"></a>安装组件</h3><p>安装导航组件React Navigation</p>
 <p>yarn add react-navigation</p>
 <p>安装第三方图标组件react-native-vector-icons</p>
@@ -100,25 +99,24 @@
 <figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> React, &#123;Component&#125; <span class="keyword">from</span> <span class="string">'react'</span>;</span><br><span class="line"><span class="keyword">import</span> &#123;</span><br><span class="line">   Text,</span><br><span class="line">&#125; <span class="keyword">from</span> <span class="string">'react-native'</span>;</span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> <span class="class"><span class="keyword">class</span> <span class="title">Home</span> <span class="keyword">extends</span> <span class="title">Component</span> </span>&#123;</span><br><span class="line">   render() &#123;</span><br><span class="line">       <span class="keyword">return</span> (</span><br><span class="line">           &lt;Text&gt;首页&lt;<span class="regexp">/Text&gt;</span></span><br><span class="line"><span class="regexp">       )</span></span><br><span class="line"><span class="regexp">   &#125;</span></span><br><span class="line"><span class="regexp">&#125;</span></span><br></pre></td></tr></table></figure>
 <p>LiveView.js / RankView.js/ FindView.js / MineView.js<br>和 HomeView.js 几乎一样，只是把 <text>首页</text> 中的文字改成相应的。</p>
 <h3 id="配置导航路由route-js"><a href="#配置导航路由route-js" class="headerlink" title="配置导航路由route.js"></a>配置导航路由route.js</h3><p>先导入需要的组件，包括上面自己写的5 个 tab</p>
-<p><img src="https://images2018.cnblogs.com/blog/440112/201805/440112-20180507111129461-372521148.png" alt="图片" title="图片"></p>
+<img src="http://p8x1ehkdn.bkt.clouddn.com/static/images/5e934b3b-3.png">
 <p>注册tabs</p>
 <figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 注册tabs</span></span><br><span class="line"><span class="keyword">const</span> AppTabNavigator = TabNavigator(&#123;</span><br><span class="line">   Home: &#123;</span><br><span class="line">       screen: HomeView,</span><br><span class="line">       navigationOptions: &#123;</span><br><span class="line">           tabBarLabel: <span class="string">'首页'</span>,</span><br><span class="line">           tabBarIcon: <span class="function">(<span class="params">&#123;tintColor&#125;</span>) =&gt;</span> &#123;</span><br><span class="line">             <span class="keyword">return</span> <span class="xml"><span class="tag">&lt;<span class="name">Entypo</span> <span class="attr">name</span>=<span class="string">"home"</span> <span class="attr">size</span>=<span class="string">&#123;25&#125;</span> <span class="attr">color</span>=<span class="string">&#123;tintColor&#125;</span> /&gt;</span>;</span></span><br><span class="line"><span class="xml">           &#125;,</span></span><br><span class="line"><span class="xml">       &#125;,</span></span><br><span class="line"><span class="xml">   &#125;,</span></span><br><span class="line"><span class="xml">   Live: &#123;</span></span><br><span class="line"><span class="xml">       screen: LiveView,</span></span><br><span class="line"><span class="xml">       navigationOptions: &#123;</span></span><br><span class="line"><span class="xml">           tabBarLabel: '直播',</span></span><br><span class="line"><span class="xml">           tabBarIcon: (&#123;tintColor&#125;) =&gt; &#123;</span></span><br><span class="line">             return &lt;Entypo name="mic" size=&#123;25&#125; color=&#123;tintColor&#125; /&gt;;</span><br><span class="line">           &#125;,</span><br><span class="line">       &#125;</span><br><span class="line">   &#125;,</span><br><span class="line">   Rank: &#123;</span><br><span class="line">       screen: RankView,</span><br><span class="line">       navigationOptions: &#123;</span><br><span class="line">           tabBarLabel: '排行榜',</span><br><span class="line">           tabBarIcon: (&#123;tintColor&#125;) =&gt; &#123;</span><br><span class="line">             return &lt;Entypo name="bar-graph" size=&#123;25&#125; color=&#123;tintColor&#125; /&gt;;</span><br><span class="line">           &#125;,</span><br><span class="line">       &#125;</span><br><span class="line">   &#125;,</span><br><span class="line">   Find: &#123;</span><br><span class="line">       screen: FindView,</span><br><span class="line">       navigationOptions: &#123;</span><br><span class="line">           tabBarLabel: '发现',</span><br><span class="line">           tabBarIcon: (&#123;tintColor&#125;) =&gt; &#123;</span><br><span class="line">             return &lt;Entypo name="direction" size=&#123;25&#125; color=&#123;tintColor&#125; /&gt;;</span><br><span class="line">           &#125;,</span><br><span class="line">       &#125;</span><br><span class="line">   &#125;,</span><br><span class="line">   Mine: &#123;</span><br><span class="line">       screen: MineView,</span><br><span class="line">       navigationOptions: &#123;</span><br><span class="line">           tabBarLabel: '我的',</span><br><span class="line">           tabBarIcon: (&#123;tintColor&#125;) =&gt; &#123;</span><br><span class="line">             return &lt;Entypo name="user" size=&#123;25&#125; color=&#123;tintColor&#125; /&gt;;</span><br><span class="line">           &#125;,</span><br><span class="line">       &#125;</span><br><span class="line">   &#125;</span><br><span class="line">&#125;, &#123;</span><br><span class="line">   animationEnabled: false, // 切换页面时是否有动画效果</span><br><span class="line">   tabBarPosition: 'bottom', // 显示在底端，android 默认是显示在页面顶端的</span><br><span class="line">   swipeEnabled: true, // 是否可以左右滑动切换tab</span><br><span class="line">   backBehavior: 'none', // 按 back 键是否跳转到第一个Tab(首页)， none 为不跳转</span><br><span class="line">   tabBarOptions: &#123;</span><br><span class="line">       activeTintColor: '#1890ff', // 文字和图片选中颜色</span><br><span class="line">       inactiveTintColor: 'gray', // 文字和图片未选中颜色</span><br><span class="line">       showIcon: true, // android 默认不显示 icon, 需要设置为 true 才会显示</span><br><span class="line">       indicatorStyle: &#123;</span><br><span class="line">           height: 0  // 如TabBar下面显示有一条线，可以设高度为0后隐藏</span><br><span class="line">       &#125;, </span><br><span class="line">       pressOpacity: 0.8,</span><br><span class="line">       style: &#123;  </span><br><span class="line">               height: 46,  </span><br><span class="line">               backgroundColor: '#ffffff',  </span><br><span class="line">               zIndex: 0,  </span><br><span class="line">               position: 'relative'  </span><br><span class="line">       &#125;,  </span><br><span class="line">       labelStyle: &#123;  </span><br><span class="line">               fontSize: 11,  </span><br><span class="line">               paddingVertical: 0,  </span><br><span class="line">               marginTop: -3,</span><br><span class="line">       &#125;,  </span><br><span class="line">       iconStyle: &#123;  </span><br><span class="line">               marginTop: -2  </span><br><span class="line">       &#125;,  </span><br><span class="line">   &#125;,</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
 <p>配置路由</p>
 <figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="keyword">const</span> AppNavigator = StackNavigator(</span><br><span class="line">   &#123;</span><br><span class="line">       Home  : &#123; <span class="attr">screen</span>: AppTabNavigator, <span class="attr">navigationOptions</span>: &#123; <span class="attr">header</span>: <span class="literal">null</span> &#125;&#125;,</span><br><span class="line">       Mine    : &#123; <span class="attr">screen</span>: MineView, <span class="attr">navigationOptions</span>: &#123; <span class="attr">header</span>: <span class="literal">null</span> &#125;&#125;,</span><br><span class="line">   &#125;,</span><br><span class="line">   &#123;</span><br><span class="line">       headerMode        : <span class="string">'screen'</span>,</span><br><span class="line">       initialRouteName  :<span class="string">'Home'</span>,</span><br><span class="line">   &#125;</span><br><span class="line">);</span><br></pre></td></tr></table></figure>
 <h3 id="修改APP-js"><a href="#修改APP-js" class="headerlink" title="修改APP.js"></a>修改APP.js</h3><p>在render中引用定义的StackNavigator–AppNavigator</p>
 <figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> React, &#123; Component &#125; <span class="keyword">from</span> <span class="string">'react'</span>;</span><br><span class="line"><span class="keyword">import</span> &#123;</span><br><span class="line"> StyleSheet,</span><br><span class="line"> Text,</span><br><span class="line"> View</span><br><span class="line">&#125; <span class="keyword">from</span> <span class="string">'react-native'</span>;</span><br><span class="line"><span class="keyword">import</span> &#123; AppNavigator &#125; <span class="keyword">from</span> <span class="string">'./src/route'</span>;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> <span class="class"><span class="keyword">class</span> <span class="title">App</span> <span class="keyword">extends</span> <span class="title">Component</span> </span>&#123;</span><br><span class="line"> render() &#123;</span><br><span class="line">   <span class="keyword">return</span> (</span><br><span class="line">     &lt;AppNavigator/&gt;</span><br><span class="line">   );</span><br><span class="line"> &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="运行-react-native-run-ios"><a href="#运行-react-native-run-ios" class="headerlink" title="运行 react-native run-ios"></a>运行 react-native run-ios</h3><p><img src="https://pic4.zhimg.com/v2-97d85d611da93598dd0912b0239fd2c4_b.jpg" alt="图片" title="图片"></p>
+<h3 id="运行-react-native-run-ios"><a href="#运行-react-native-run-ios" class="headerlink" title="运行 react-native run-ios"></a>运行 react-native run-ios</h3><img src="http://p8x1ehkdn.bkt.clouddn.com/static/images/5e934b3b-4.png">
 <h3 id="图标react-native-vector-icons-踩坑"><a href="#图标react-native-vector-icons-踩坑" class="headerlink" title="图标react-native-vector-icons 踩坑"></a>图标react-native-vector-icons 踩坑</h3><p>地址：<a href="https://github.com/oblador/react-native-vector-icons" rel="external nofollow noopener noreferrer" target="_blank">https://github.com/oblador/react-native-vector-icons</a></p>
 <p>可查询图标地址：<a href="https://oblador.github.io/react-native-vector-icons/" rel="external nofollow noopener noreferrer" target="_blank">https://oblador.github.io/react-native-vector-icons/</a></p>
 <p>安装：yarn add  react-native-vector-icons</p>
 <p>Ios:</p>
-<p><img src="https://images2018.cnblogs.com/blog/440112/201805/440112-20180510143757124-80660339.png" alt="图片" title="图片"><br><img src="https://pic3.zhimg.com/v2-85c2951d0a71ef6519561772e57c2904_b.jpg" alt="图片" title="图片"></p>
-<p>安装了好几次，运行都有问题<br>react-native开发踩坑之 ios上react-native-vector-icons 的error：unRecognized font family ‘FontAwesome’<br>把node_modules/react-native-vector-icons下的Fonts文件添整个加到工程中</p>
-<p><img src="https://pic2.zhimg.com/v2-ca1063f482d003164e1ba79818a13b27_b.jpg" alt="图片" title="图片"><br><img src="https://images2018.cnblogs.com/blog/440112/201805/440112-20180510143609335-1550180614.png" alt="图片" title="图片"></p>
+<img src="http://p8x1ehkdn.bkt.clouddn.com/static/images/5e934b3b-5.png">
+<p>安装了好几次，运行都有问题<br>react-native开发踩坑之 ios上react-native-vector-icons 的error：unRecognized font family ‘FontAwesome’<br>把node_modules/react-native-vector-icons下的Fonts文件添整个加到工程中<br><img src="http://p8x1ehkdn.bkt.clouddn.com/static/images/5e934b3b-6.png"><br><img src="http://p8x1ehkdn.bkt.clouddn.com/static/images/5e934b3b-7.png"></p>
 <p>Finish，然后编辑Info.plist文件</p>
 <figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">key</span>&gt;</span>UIAppFonts<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">array</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">string</span>&gt;</span>Zocial.ttf<span class="tag">&lt;/<span class="name">string</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">string</span>&gt;</span>SimpleLineIcons.ttf<span class="tag">&lt;/<span class="name">string</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">string</span>&gt;</span>Octicons.ttf<span class="tag">&lt;/<span class="name">string</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">string</span>&gt;</span>MaterialIcons.ttf<span class="tag">&lt;/<span class="name">string</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">string</span>&gt;</span>MaterialCommunityIcons.ttf<span class="tag">&lt;/<span class="name">string</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">string</span>&gt;</span>Ionicons.ttf<span class="tag">&lt;/<span class="name">string</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">string</span>&gt;</span>Foundation.ttf<span class="tag">&lt;/<span class="name">string</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">string</span>&gt;</span>FontAwesome.ttf<span class="tag">&lt;/<span class="name">string</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">string</span>&gt;</span>Ferther.ttf<span class="tag">&lt;/<span class="name">string</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">string</span>&gt;</span>Entypo.ttf<span class="tag">&lt;/<span class="name">string</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">string</span>&gt;</span>Evilcons.ttf<span class="tag">&lt;/<span class="name">string</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">array</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <p>Xcode的Info.plist出现这种</p>
-<p><img src="https://pic2.zhimg.com/v2-d4ef1bd7cc19edceb1b8094741cdcc04_b.jpg" alt="图片" title="图片"></p>
+<img src="http://p8x1ehkdn.bkt.clouddn.com/static/images/5e934b3b-8.png">
 <p>编辑完重新运行才有效</p>
 
         
@@ -141,17 +139,17 @@
       
 <nav id="article-nav">
   
-    <a href="/post/e44b2a33.html" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/post/1fd47712.html" id="article-nav-newer" class="article-nav-link-wrap">
       <div class="article-nav-title">&laquo;
         
-          解决问题集锦-Ionic
+          前端学习资源整理
         
       </div>
     </a>
   
   
-    <a href="/post/c3ec74bc.html" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">我的书单&raquo;</div>
+    <a href="/post/5254fc55.html" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">解决问题集锦&raquo;</div>
     </a>
   
 </nav>
@@ -176,7 +174,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">标签云</h3>
     <div class="widget tagcloud">
-      <a href="/tags/Book/" style="font-size: 10px;">Book</a> <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/Ionic/" style="font-size: 10px;">Ionic</a> <a href="/tags/Life/" style="font-size: 10px;">Life</a> <a href="/tags/Q-A/" style="font-size: 20px;">Q&A</a> <a href="/tags/React/" style="font-size: 20px;">React</a> <a href="/tags/Redux/" style="font-size: 10px;">Redux</a> <a href="/tags/Travel/" style="font-size: 20px;">Travel</a>
+      <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/Ionic/" style="font-size: 10px;">Ionic</a> <a href="/tags/Life/" style="font-size: 10px;">Life</a> <a href="/tags/Q-A/" style="font-size: 15px;">Q&A</a> <a href="/tags/React/" style="font-size: 20px;">React</a> <a href="/tags/Redux/" style="font-size: 20px;">Redux</a> <a href="/tags/Travel/" style="font-size: 10px;">Travel</a>
     </div>
   </div>
 
@@ -185,7 +183,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">分类</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/IT/">IT</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/IT/Ionic/">Ionic</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/IT/Other/">Other</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/IT/React/">React</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Life/">Life</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Life/Diary/">Diary</a></li></ul></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/IT/">IT</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/IT/Ionic/">Ionic</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/IT/Other/">Other</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/IT/React/">React</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/IT/Redux/">Redux</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Life/">Life</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Life/Diary/">Diary</a></li></ul></li></ul>
     </div>
   </div>
 
