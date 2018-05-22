@@ -613,9 +613,6 @@ a.article-title:hover {
   font-family: FontAwesome;
   padding-right: 6px;
 }
-#article-nav {
-  position: relative;
-}
 #article-nav:before,
 #article-nav:after {
   content: "";
@@ -623,25 +620,6 @@ a.article-title:hover {
 }
 #article-nav:after {
   clear: both;
-}
-@media screen and (min-width: 768px) {
-  #article-nav {
-    margin: 30px 0;
-  }
-  #article-nav:before {
-    width: 8px;
-    height: 8px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: -4px;
-    margin-left: -4px;
-    content: "";
-    border-radius: 50%;
-    background: #ddd;
-    -webkit-box-shadow: 0 1px 2px #fff;
-    box-shadow: 0 1px 2px #fff;
-  }
 }
 .article-nav-link-wrap {
   text-decoration: none;
@@ -1327,7 +1305,7 @@ pre .javascript .function {
 }
 .comment-title {
   margin: 15px 0;
-  font-size: 30px;
+  font-size: 25px;
   line-height: 1.4;
   font-weight: 300;
   letter-spacing: 2px;
