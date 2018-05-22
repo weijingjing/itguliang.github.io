@@ -1336,12 +1336,15 @@ pre .javascript .function {
 .v .veditor {
   min-height: 80px;
 }
-.v .vnick {
+.v .vnick,
+.v .vcontrol .col-40 {
   width: 100% !important;
 }
 .v .vmail,
-.v .vlink {
-  display: none;
+.v .vlink,
+.v .vctrl,
+.v .vcontrol .col-60 {
+  display: none !important;
 }
 .power {
   display: none;
