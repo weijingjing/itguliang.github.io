@@ -21,9 +21,11 @@
 <meta name="twitter:description" content="基本命令备注下：hexo new “postName” #新建文章hexo new page “pageName” #新建页面hexo cleanhexo generate #生成静态页面至public目录hexo server #开启预览访问端口（默认端口4000，’ctrl + c’关闭server）hexo deploy #将.deploy目录部署到GitHub hexo n == hexo">
   <script type="text/javascript" src="/js/jquery.min.js"></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
   
   
-    <link rel="icon" href="images/favicon.ico">
+    <link rel="icon" href="/images/favicon.ico">
   
   
     <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
@@ -128,17 +130,17 @@
       
 <nav id="article-nav">
   
-    <a href="/post/e44b2a33.html" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/post/f1da163e.html" id="article-nav-newer" class="article-nav-link-wrap">
       <div class="article-nav-title">&laquo;
         
-          解决问题集锦-Ionic
+          IT姑凉小事记
         
       </div>
     </a>
   
   
-    <a href="/post/f1da163e.html" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">IT姑凉小事记&raquo;</div>
+    <a href="/post/adf0756b.html" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Hello World21&raquo;</div>
     </a>
   
 </nav>
@@ -146,7 +148,7 @@
     
   </article>
 
-  
+  <div id="comment"></div>
 </div>
 
 
@@ -211,6 +213,18 @@
       document.getElementById('payme').style.display=display=="block"?"none":"block";
     }
   })();
+</script>
+<script>
+    new Valine({
+      el: '#comment' ,
+      notify:false, 
+      verify:false, 
+      appId: '7FkKwQXz56M9GU6KRpQxxCYr-gzGzoHsz',
+      appKey: 'RYC5fHYsedrXiXT1xrNeEWfI',
+      placeholder: 'just go go',
+      path:window.location.pathname, 
+      avatar:'mm' 
+  });
 </script>
     </div>
     <footer id="footer">

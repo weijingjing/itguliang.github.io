@@ -24,9 +24,11 @@
 <meta name="twitter:image" content="https://itguliang.github.io/post/!--￼14--%3E/public/img/pic/jvm1.png">
   <script type="text/javascript" src="/js/jquery.min.js"></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
   
   
-    <link rel="icon" href="images/favicon.ico">
+    <link rel="icon" href="/images/favicon.ico">
   
   
     <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
@@ -163,17 +165,17 @@ HTTP Proxy Port:80
       
 <nav id="article-nav">
   
-    <a href="/post/5e934b3b.html" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/post/e44b2a33.html" id="article-nav-newer" class="article-nav-link-wrap">
       <div class="article-nav-title">&laquo;
         
-          零基础学习React之React TabNavigation
+          解决问题集锦-Ionic
         
       </div>
     </a>
   
   
-    <a href="/post/e44b2a33.html" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">解决问题集锦-Ionic&raquo;</div>
+    <a href="/post/f1da163e.html" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">IT姑凉小事记&raquo;</div>
     </a>
   
 </nav>
@@ -181,7 +183,7 @@ HTTP Proxy Port:80
     
   </article>
 
-  
+  <div id="comment"></div>
 </div>
 
 
@@ -241,6 +243,18 @@ HTTP Proxy Port:80
       document.getElementById('payme').style.display=display=="block"?"none":"block";
     }
   })();
+</script>
+<script>
+    new Valine({
+      el: '#comment' ,
+      notify:false, 
+      verify:false, 
+      appId: '7FkKwQXz56M9GU6KRpQxxCYr-gzGzoHsz',
+      appKey: 'RYC5fHYsedrXiXT1xrNeEWfI',
+      placeholder: 'just go go',
+      path:window.location.pathname, 
+      avatar:'mm' 
+  });
 </script>
     </div>
     <footer id="footer">

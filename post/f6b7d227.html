@@ -21,9 +21,11 @@
 <meta name="twitter:description" content="安装reduxnpm install --save redux react-redux redux-thunknpm install --save-dev redux-logger react-redux帮助你完成数据订阅redux-thunk可以放你实现异步actionredux-logger是redux的日志中间件 使用redux">
   <script type="text/javascript" src="/js/jquery.min.js"></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
   
   
-    <link rel="icon" href="images/favicon.ico">
+    <link rel="icon" href="/images/favicon.ico">
   
   
     <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
@@ -95,25 +97,21 @@
       
 <nav id="article-nav">
   
-    <a href="/post/adf0756b.html" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/post/9ff6bdc8.html" id="article-nav-newer" class="article-nav-link-wrap">
       <div class="article-nav-title">&laquo;
         
-          Hello World21
+          118988888
         
       </div>
     </a>
   
-  
-    <a href="/post/4493d05e.html" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Hello World27&raquo;</div>
-    </a>
   
 </nav>
 
     
   </article>
 
-  
+  <div id="comment"></div>
 </div>
 
 
@@ -173,6 +171,18 @@
       document.getElementById('payme').style.display=display=="block"?"none":"block";
     }
   })();
+</script>
+<script>
+    new Valine({
+      el: '#comment' ,
+      notify:false, 
+      verify:false, 
+      appId: '7FkKwQXz56M9GU6KRpQxxCYr-gzGzoHsz',
+      appKey: 'RYC5fHYsedrXiXT1xrNeEWfI',
+      placeholder: 'just go go',
+      path:window.location.pathname, 
+      avatar:'mm' 
+  });
 </script>
     </div>
     <footer id="footer">
